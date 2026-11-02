@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Booking | Mane Barber Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=80')">
+      <div class="container">
+        <span class="eyebrow">Get in Touch</span>
+        <h1>Contact &amp; <span class="accent">Booking</span></h1>
+        <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+      </div>
+    </section>
+
+    <section class="section" id="book">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="eyebrow">Visit Us</span>
+          <h2 style="margin-bottom:1rem">We'd Love to <span class="accent">See You</span></h2>
+          <p class="lead">Walk-ins welcome, but booking guarantees your chair.</p>
+
+          <div class="info-item">
+            <div class="icon">⌖</div>
+            <div><h4>Address</h4><p>12 Al Wasl Road, Jumeirah, Dubai, UAE</p></div>
+          </div>
+          <div class="info-item">
+            <div class="icon">☎</div>
+            <div><h4>Phone</h4><p><a href="tel:+97140000000">+971 4 000 0000</a></p></div>
+          </div>
+          <div class="info-item">
+            <div class="icon">✉</div>
+            <div><h4>Email</h4><p><a href="mailto:hello@manestudio.com">hello@manestudio.com</a></p></div>
+          </div>
+
+          <ul class="hours">
+            <li><span>Monday – Friday</span><span>9:00 AM – 9:00 PM</span></li>
+            <li><span>Saturday</span><span>9:00 AM – 10:00 PM</span></li>
+            <li><span>Sunday</span><span>10:00 AM – 6:00 PM</span></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" data-demo>
+          <h3>Book an Appointment</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" type="text" required placeholder="John Smith" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input id="phone" type="tel" required placeholder="+971 50 000 0000" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Service</label>
+              <select id="service" required>
+                <option value="">Select a service</option>
+                <option>Signature Haircut</option>
+                <option>Skin Fade</option>
+                <option>Beard Sculpting</option>
+                <option>Hot Towel Shave</option>
+                <option>Styling &amp; Colour</option>
+                <option>Facial &amp; Grooming</option>
+                <option>Package – The Gentleman</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="barber">Barber</label>
+              <select id="barber">
+                <option>No preference</option>
+                <option>Marcus Hale</option>
+                <option>Daniel Cruz</option>
+                <option>Yusuf Amin</option>
+                <option>Leo Martins</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input id="date" type="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Time</label>
+              <input id="time" type="time" min="09:00" max="21:00" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="notes">Notes</label>
+            <textarea id="notes" placeholder="Anything we should know?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Confirm Booking &rarr;</button>
+          <div class="form-msg">Thank you! Your booking request has been received. We'll confirm shortly.</div>
+        </form>
+      </div>
+    </section>
+
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=Al+Wasl+Road+Jumeirah+Dubai&output=embed" loading="lazy" title="Mane Barber Studio location"></iframe>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

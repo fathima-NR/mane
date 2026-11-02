@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Mane Barber Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?auto=format&fit=crop&w=1800&q=80')">
+      <div class="container">
+        <span class="eyebrow">Our Work</span>
+        <h1>The <span class="accent">Gallery</span></h1>
+        <p class="breadcrumb"><a href="index.html">Home</a> / Gallery</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cuts">Haircuts</button>
+          <button class="filter-btn" data-filter="beard">Beard</button>
+          <button class="filter-btn" data-filter="studio">Studio</button>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item tall" data-cat="cuts">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Classic haircut" />
+            <div class="overlay">Classic Cut</div>
+          </div>
+          <div class="gallery-item" data-cat="studio">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Barber chairs" />
+            <div class="overlay">The Studio</div>
+          </div>
+          <div class="gallery-item" data-cat="beard">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Beard trim" />
+            <div class="overlay">Beard Trim</div>
+          </div>
+          <div class="gallery-item tall" data-cat="cuts">
+            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=80" alt="Skin fade" />
+            <div class="overlay">Skin Fade</div>
+          </div>
+          <div class="gallery-item wide" data-cat="studio">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80" alt="Barbershop tools" />
+            <div class="overlay">Tools of the Trade</div>
+          </div>
+          <div class="gallery-item" data-cat="cuts">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Styling" />
+            <div class="overlay">Textured Crop</div>
+          </div>
+          <div class="gallery-item" data-cat="beard">
+            <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=80" alt="Shave" />
+            <div class="overlay">Hot Towel Shave</div>
+          </div>
+          <div class="gallery-item wide" data-cat="studio">
+            <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?auto=format&fit=crop&w=1200&q=80" alt="Studio interior" />
+            <div class="overlay">Lounge</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="banner-text reveal">
+        <h2>Love What<br />You See?</h2>
+        <p>Your next look is one booking away.</p>
+        <div><a href="contact.html#book" class="btn btn-gold">Book Now &rarr;</a></div>
+      </div>
+      <div class="banner-image">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1400&q=80" alt="Barber at work" />
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <img src="" alt="Gallery preview" />
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
